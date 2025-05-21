@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.kdt.kentseldonusumtakip.OldsController">
+    <children>
+        <AnchorPane prefHeight="70.0" prefWidth="602.0" style="-fx-background-color: #383b47;">
+            <children>
+                <Label alignment="CENTER" layoutY="13.0" opacity="0.92" prefHeight="39.0" prefWidth="601.0" text="Uyarı Gönderme Arşivi" textAlignment="CENTER" textFill="#dbdbdb">
+                    <font>
+                        <Font name="Calibri Bold" size="30.0" />
+                    </font>
+                    <effect>
+                        <DropShadow height="11.64" radius="5.32" spread="0.3" width="11.64" />
+                    </effect>
+                </Label>
+            </children>
+        </AnchorPane>
+        <ListView fx:id="warned_buildings_listview" layoutX="82.0" layoutY="100.0" prefHeight="218.0" prefWidth="438.0" />
+        <Button fx:id="goLoginPage" layoutX="561.0" layoutY="73.0" mnemonicParsing="false" onAction="#goLoginPageAction" prefHeight="26.0" prefWidth="26.0" />
+        <Button fx:id="goBackToGeneralInfoPage" layoutX="520.0" layoutY="73.0" mnemonicParsing="false" onAction="#goBackToGeneralInfoAction" prefHeight="26.0" prefWidth="26.0" />
+        <ImageView layoutX="562.0" layoutY="74.0">
+            <image>
+                <Image url="@logout_logo.png" />
+            </image>
+        </ImageView>
+        <ImageView layoutX="521.0" layoutY="74.0">
+            <image>
+                <Image url="@home_icon.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.kdt.kentseldonusumtakip.AddNewController">
+    <children>
+        <AnchorPane prefHeight="70.0" prefWidth="602.0" style="-fx-background-color: #383b47;">
+            <children>
+                <Label alignment="CENTER" layoutY="13.0" opacity="0.92" prefHeight="39.0" prefWidth="601.0" text="Yeni Konut Ekle" textAlignment="CENTER" textFill="#dbdbdb">
+                    <font>
+                        <Font name="Calibri Bold" size="30.0" />
+                    </font>
+                    <effect>
+                        <DropShadow height="11.64" radius="5.32" spread="0.3" width="11.64" />
+                    </effect>
+                </Label>
+            </children>
+        </AnchorPane>
+        <Button fx:id="goLoginPage" layoutX="561.0" layoutY="73.0" mnemonicParsing="false" onAction="#goLoginPageAction" prefHeight="26.0" prefWidth="26.0" />
+        <Button fx:id="goBackToGeneralInfoPage" layoutX="520.0" layoutY="73.0" mnemonicParsing="false" onAction="#goBackToGeneralInfoAction" prefHeight="26.0" prefWidth="26.0" text="   " />
+      <ImageView layoutX="562.0" layoutY="74.0">
+         <image>
+            <Image url="@logout_logo.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="521.0" layoutY="74.0">
+         <image>
+            <Image url="@home_icon.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="127.0" layoutY="140.0" prefHeight="26.0" prefWidth="62.0" text="Bina Adı:" />
+      <Label layoutX="127.0" layoutY="165.0" prefHeight="26.0" prefWidth="62.0" text="Id:" />
+      <Label layoutX="127.0" layoutY="191.0" prefHeight="26.0" prefWidth="72.0" text="Risk Düzeyi:" />
+      <TextField fx:id="name" layoutX="205.0" layoutY="141.0" />
+      <TextField fx:id="id" layoutX="205.0" layoutY="166.0" />
+      <TextField fx:id="risk" layoutX="205.0" layoutY="192.0" />
+      <ChoiceBox fx:id="BuildingType" layoutX="205.0" layoutY="217.0" prefWidth="150.0" />
+      <Label layoutX="127.0" layoutY="217.0" prefHeight="26.0" prefWidth="72.0" text="Bina Çeşidi:" />
+      <Button fx:id="addButton" layoutX="205.0" layoutY="320.0" mnemonicParsing="false" onAction="#addAction" prefHeight="26.0" prefWidth="62.0" style="-fx-background-color: #67c152;" text="Ekle">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="cancelButton" layoutX="313.0" layoutY="320.0" mnemonicParsing="false" onAction="#goBackToGeneralInfoAction" prefHeight="26.0" prefWidth="62.0" style="-fx-background-color: #df2b14;" text="İptal">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="feedback_message" alignment="CENTER" layoutX="8.0" layoutY="99.0" prefHeight="39.0" prefWidth="586.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="floor_label" layoutX="127.0" layoutY="244.0" prefHeight="26.0" prefWidth="80.0" text="Kat Numarası:" />
+      <TextField fx:id="floor" layoutX="205.0" layoutY="243.0" />
+      <Label fx:id="garden_size_label" layoutX="127.0" layoutY="271.0" prefHeight="24.0" prefWidth="80.0" text="Bahçe Boyu:" />
+      <TextField fx:id="garden_size" layoutX="206.0" layoutY="270.0" />
+    </children>
+</AnchorPane>

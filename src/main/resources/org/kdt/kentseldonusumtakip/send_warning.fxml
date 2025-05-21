@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.kdt.kentseldonusumtakip.WarnController">
+    <children>
+        <AnchorPane prefHeight="70.0" prefWidth="602.0" style="-fx-background-color: #383b47;">
+            <children>
+                <Label alignment="CENTER" layoutY="13.0" opacity="0.92" prefHeight="39.0" prefWidth="601.0" text="Uyarı Gönder" textAlignment="CENTER" textFill="#dbdbdb">
+                    <font>
+                        <Font name="Calibri Bold" size="30.0" />
+                    </font>
+                    <effect>
+                        <DropShadow height="11.64" radius="5.32" spread="0.3" width="11.64" />
+                    </effect>
+                </Label>
+            </children>
+        </AnchorPane>
+        <Button fx:id="goLoginPage" layoutX="561.0" layoutY="73.0" mnemonicParsing="false" onAction="#goLoginPageAction" prefHeight="26.0" prefWidth="26.0" />
+      <Button fx:id="goBackToGeneralInfoPage" layoutX="520.0" layoutY="73.0" mnemonicParsing="false" onAction="#goBackToGeneralInfoAction" prefHeight="26.0" prefWidth="26.0" text="   " />
+      <ImageView layoutX="562.0" layoutY="74.0">
+         <image>
+            <Image url="@logout_logo.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="521.0" layoutY="74.0">
+         <image>
+            <Image url="@home_icon.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="send_warn_button" layoutX="191.0" layoutY="245.0" mnemonicParsing="false" onAction="#sendWarningAction" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: #67c152;" text="Gönder">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="send_warn_cancel_button" layoutX="337.0" layoutY="245.0" mnemonicParsing="false" onAction="#goBackToGeneralInfoAction" prefHeight="26.0" prefWidth="73.0" style="-fx-background-color: #df2b14;" text="İptal">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="warn_feedback" alignment="CENTER" layoutX="21.0" layoutY="112.0" prefHeight="54.0" prefWidth="560.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="send_warn_message" alignment="CENTER" layoutX="10.0" layoutY="183.0" prefHeight="26.0" prefWidth="582.0" text="Henüz Seçim Yapmadınız">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

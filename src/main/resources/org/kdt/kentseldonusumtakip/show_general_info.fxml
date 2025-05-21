@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.kdt.kentseldonusumtakip.GeneralInfoController">
+   <children>
+      <AnchorPane prefHeight="70.0" prefWidth="602.0" style="-fx-background-color: #383b47;">
+         <children>
+            <Label alignment="CENTER" layoutY="13.0" opacity="0.92" prefHeight="39.0" prefWidth="601.0" text="Genel Bilgiler" textAlignment="CENTER" textFill="#dbdbdb">
+               <font>
+                  <Font name="Calibri Bold" size="30.0" />
+               </font>
+               <effect>
+                  <DropShadow height="11.64" radius="5.32" spread="0.3" width="11.64" />
+               </effect>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ListView fx:id="buildings_listview" layoutX="82.0" layoutY="100.0" prefHeight="218.0" prefWidth="438.0" />
+      <Button fx:id="goLoginPage" layoutX="541.0" layoutY="73.0" mnemonicParsing="false" onAction="#goLoginPageAction" prefHeight="26.0" prefWidth="26.0" />
+      <Button fx:id="goAddNewPage" layoutX="82.0" layoutY="343.0" mnemonicParsing="false" onAction="#goAddNewPageAction" text="Yeni Konut Ekle" />
+      <Button fx:id="goOldsPage" layoutX="396.0" layoutY="343.0" mnemonicParsing="false" onAction="#goOldsPageAction" text="Uyarı Gönderilmişler" />
+      <Button fx:id="goSendWarningPage" layoutX="258.0" layoutY="343.0" mnemonicParsing="false" onAction="#goSendWarningPageAction" text="Uyarı Gönder" />
+      <ImageView layoutX="542.0" layoutY="74.0">
+         <image>
+            <Image url="@../../../../../../../../../../../Downloads/logout_FILL0_wght400_GRAD0_opsz24.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="542.0" layoutY="74.0">
+         <image>
+            <Image url="@logout_logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
